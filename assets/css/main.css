@@ -288,6 +288,17 @@ input, select, textarea {
 
 		}
 
+/* RegistrationForm */
+
+.registrationform {
+	margin: 0 auto;
+	max-width: calc(100% - 4em);
+	width: 60em;
+	background-image: url("images/szczepienie.jpg");
+		
+}
+
+	
 /* Row */
 
 	.row {
