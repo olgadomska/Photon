@@ -6,6 +6,8 @@
 -->
 <html>
 
+
+
 <head>
 	<title>Photon by HTML5 UP</title>
 	<meta charset="utf-8" />
@@ -15,22 +17,25 @@
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 
+
 <body class="is-preload">
-
-	<!-- Header -->
-	<section id="header">
-		<div class="inner">
-			<span class="icon solid major fa-cloud"></span>
-			<h1>Hi, I'm <strong>Photon</strong>, another fine<br />
-				little freebie from <a href="http://html5up.net">HTML5 UP</a>.</h1>
-			<p>Accumsan feugiat mi commodo erat lorem ipsum, sed magna<br />
-				lobortis feugiat sapien sed etiam volutpat accumsan.</p>
-			<ul class="actions special">
-				<li><a href="#one" class="button scrolly">Discover</a></li>
-			</ul>
-		</div>
-	</section>
-
+  
+		<!-- Header -->
+			<section id="header">
+				<div class="bcg">
+					<div class="inner">
+						<i class="fas fa-glass-cheers"></i>
+						<h1>Hi, I'm <strong>Photon</strong>, another fine<br />
+						little freebie from <a href="http://html5up.net">HTML5 UP</a>.</h1>
+						<p>Accumsan feugiat mi commodo erat lorem ipsum, sed magna<br />
+						lobortis feugiat sapien sed etiam volutpat accumsan.</p>
+						<ul class="actions special">
+							<li><a href="#one" class="button scrolly">Discover</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+  
 	<!-- One -->
 	<section id="one" class="main style1">
 		<div class="container">
@@ -57,12 +62,12 @@
 			<div class="row gtr-150">
 				<div class="col-6 col-12-medium">
 					<ul class="major-icons">
-						<li><span class="icon solid style1 major fa-code"></span></li>
-						<li><span class="icon solid style2 major fa-bolt"></span></li>
-						<li><span class="icon solid style3 major fa-camera-retro"></span></li>
-						<li><span class="icon solid style4 major fa-cog"></span></li>
-						<li><span class="icon solid style5 major fa-desktop"></span></li>
-						<li><span class="icon solid style6 major fa-calendar"></span></li>
+						<li><span class="icon solid style1 major fas fa-gifts"></span></li>
+						<li><span class="icon solid style2 major fas fa-gift"></span></li>
+						<li><span class="icon solid style3 major fas fa-sleigh"></span></li>
+						<li><span class="icon solid style4 major fas fa-candy-cane"></span></li>
+						<li><span class="icon solid style5 major fas fa-holly-berry"></span></li>
+						<li><span class="icon solid style6 major fas fa-tree"></span></li>
 					</ul>
 				</div>
 				<div class="col-6 col-12-medium">
@@ -455,20 +460,68 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			</section>
 		-->
 
-	<!-- Footer -->
-	<section id="footer">
-		<ul class="icons">
-			<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-			<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-			<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-			<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-			<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-		</ul>
-		<ul class="copyright">
-			<li>&copy; Untitled</li>
-			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-		</ul>
-	</section>
+
+		<!--  Reservation Form  -->
+		<section id="reservationform">
+			<p></p>
+			<h4>Zapisy na szczepienie COVID-19</h4>
+			<form method="post" action="#">
+				<div class="row gtr-uniform gtr-50">
+					<div class="col-6 col-12-xsmall">
+						<input type="text" name="imienazwisko" id="imienazwisko" value="" placeholder="Podaj imie i nazwisko" />
+					</div>
+					<div class="col-6 col-12-xsmall">
+						<input type="email" name="email" id="email" value="" placeholder="Podaj email" />
+					</div>
+					<div class="col-12">
+						<select name="Miasto>" id="Miasto">
+							<option value="">- Wybierz miasto -</option>
+							<option value="1">Poznan</option>
+							<option value="2">Warszawa</option>
+							<option value="3">Gdansk</option>
+							<option value="4">Krakow</option>
+						</select>
+					</div>
+					<div class="col-4 col-12-small">
+						<input type="radio" id="priority-normal" name="priority" checked>
+						<label for="priority-normal">Jestem w wieku ponizej 65 lat</label>
+					</div>
+					<div class="col-4 col-12-small">
+						<input type="radio" id="priority-high" name="priority">
+						<label for="priority-high">Jestem w wieku 65 lat lub wiecej</label>
+					</div>
+					<div class="col-6 col-12-small">
+						<input type="checkbox" id="acceptconditions" name="acceptconditions">
+						<label for="acceptconditions">Klikajac ZAPISZ MNIE akceptujesz Regulamin i Polityke Prywatnosci</label>
+					</div>
+					<div class="col-12">
+						<textarea name="message" id="message" placeholder="Wpisz dodatkowa wiadomosc" rows="6"></textarea>
+					</div>
+					<div class="col-12">
+						<ul class="actions">
+							<li><input type="submit" value="ZAPISZ MNIE" class="primary" /></li>
+							<li><input type="reset" value="Wyczysc formularz" /></li>
+						</ul>
+					</div>
+				</div>
+			</form>
+		</section>
+
+
+		<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</section>
+	
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
@@ -477,6 +530,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+
 
 </body>
 
